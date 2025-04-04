@@ -41,7 +41,7 @@ int mine;
 
 int main(){
 
-    float mine = 0;
+    int mine = 0;
 
     cout<<"You have just bought a plot of land that has been rumored to be hiding gold.\n"; //start of adventure
     cout<<"Alone with your pickaxe, and sheer determination to strike it rich, will you find this supposed gold in your newly acquired land?\n";
