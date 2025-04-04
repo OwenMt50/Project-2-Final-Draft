@@ -33,9 +33,9 @@ int mine;
             cout<<"'I bought all this land for some crappy metals? I knew it I should've stayed in the big city than try my luck!'\n";
             cout<<"After several hours of rest, you decide to give up, and sell your land to another prospector.\n";
             cout<<"You sold your land for $"<<multiply(acres, price)<<"\n";
-            cout<<"__________\n";
-            cout<<"GAME OVER\n"; //Regular game over instead of eureka
-            cout<<"‾‾‾‾‾‾‾‾‾‾\n";
+            cout<<"' /_________/\n";
+            cout<<" /GAME OVER/ \n"; //Regular game over instead of eureka
+            cout<<"/‾‾‾‾‾‾‾‾‾/\n";
         }
     }
 
