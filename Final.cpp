@@ -7,16 +7,12 @@
 
 using namespace std;
 
-int acres = 0;
-int price = 750;
-int mine;
-
 
     int multiply(int acres, int price){ //multiply function for bad ending
         return acres*price;
     }
 
-    void possibility(int mine){ //if function determines ending from user choice
+    void possibility(int mine, int acres, int price){ //if function determines ending from user choice
         if (mine == 1){//Good ending 
             cout<<"Your whole body is aching of pain, and it felt like you have been mining for an eternity.\n"; 
             cout<<"You look down at your wrist watch to see it is "<<13%12<<" AM.\n"; //Modulo used to create 1AM time
@@ -32,7 +28,7 @@ int mine;
             cout<<"All that is found within your strip mine are some copper, and low quality silver veins.\n";
             cout<<"'I bought all this land for some crappy metals? I knew it I should've stayed in the big city than try my luck!'\n";
             cout<<"After several hours of rest, you decide to give up, and sell your land to another prospector.\n";
-            cout<<"You sold your land for $"<<multiply(acres, price)<<"\n";
+            cout<<"You sold your land for $"<<multiply(acres, price)<<"\n"; //multiply called
             cout<<"' /_________/\n";
             cout<<" /GAME OVER/ \n"; //Regular game over instead of eureka
             cout<<"/‾‾‾‾‾‾‾‾‾/\n";
@@ -42,6 +38,9 @@ int mine;
 int main(){
 
     int mine = 0;
+    int acres = 0;
+    int price = 750;
+    int mine;
 
     cout<<"You have just bought a plot of land that has been rumored to be hiding gold.\n"; //start of adventure
     cout<<"Alone with your pickaxe, and sheer determination to strike it rich, will you find this supposed gold in your newly acquired land?\n";
@@ -58,7 +57,7 @@ int main(){
         cout<<"*You have chosen to create a strip mine*\n";
     }
     
-    possibility(mine); //call for if function
+    possibility(mine, acres, price); //call for if function
 
 //end of program
 
