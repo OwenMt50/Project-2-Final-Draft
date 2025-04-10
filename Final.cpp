@@ -28,7 +28,7 @@ using namespace std;
             cout<<"All that is found within your strip mine are some copper, and low quality silver veins.\n";
             cout<<"'I bought all this land for some crappy metals? I knew it I should've stayed in the big city than try my luck!'\n";
             cout<<"After several hours of rest, you decide to give up, and sell your land to another prospector.\n";
-            cout<<"You sold your land for $"<<multiply(acres, price)<<"\n"; //multiply called
+            cout<<"You sold your land for $"<<multiply(acres, price)<<"\n"; //multiply function called
             cout<<"' /_________/\n";
             cout<<" /GAME OVER/ \n"; //Regular game over instead of eureka
             cout<<"/‾‾‾‾‾‾‾‾‾/\n";
@@ -37,10 +37,10 @@ using namespace std;
 
 int main(){
 
-    int mine = 0;
+    int mine = 0; //note to self, no global variables, keep in int main
     int acres = 0;
     int price = 750;
-    int mine;
+    
 
     cout<<"You have just bought a plot of land that has been rumored to be hiding gold.\n"; //start of adventure
     cout<<"Alone with your pickaxe, and sheer determination to strike it rich, will you find this supposed gold in your newly acquired land?\n";
